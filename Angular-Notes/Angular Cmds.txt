@@ -1,0 +1,46 @@
+Angular Commands 
+netstat -ano | findstr :4200
+tskill yourPID
+npm install -g @angular /cli
+node -v
+npm-v
+ng --version
+ng new "my-new-angular-app"
+npm i bootstrap
+npm i bootstrap --save
+ng serve 
+ng generate pipe custom
+ng build --base-href="/demos"
+       
+ng generate module orders --route orders --module app.module
+ng g gaurd admin-guard
+npm install bootstrap jquery popper.js --save
+"styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.main.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery_min.js",
+              "node_modules/bootstrap/dist/js/bootstrap_min.js"]
+ng g service contact
+ npm i -g json-server
+json-server --watch .\db.json
+ng g interceptor handle
+
+
+++++++++++++++++++++++++++++++++++++++
+
+ng new "AngularCRUD"
+ng g m orders
+npm i jquery
+npm i popper.js
+npm i bootstrap
+ng g m products --route products --module app.module
+
+
+
+
+
+
+
+

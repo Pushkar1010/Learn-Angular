@@ -1,0 +1,47 @@
+<h1 class="bg-primary"> Welcome To my world</h1>
+<h4>Learn Interpolation</h4>
+<div>{{subTitle}} </div>
+<div>{{epNumber}} </div>
+<div>{{user.userId}} {{user.userName}} {{user.status}}</div>
+<h4>Learn NgStyle Prop Binding</h4>
+<div [ngStyle]="{color:colorVal}">This is example</div>
+<h4>Learn NgClass Prop Binding</h4>
+<div [ngClass]="'c1'">Back Color by class</div>
+
+<input [placeholder]="placeholdeval">
+<h4>Learn Attribute Binding</h4>
+<a [href]="hrefValue" [attr.updateLink]="updatedLink">Google</a>
+<h4>Learn Event Binding</h4>
+<button (click)="showAlert(10);">Click Me </button>
+<h4>Learn Two way Binding</h4>
+<input [(ngModel)]="firstname">
+<button (click)="readFirstName();">Read It</button>
+<div>{{firstname}}</div>
+<h4>Learn Buil in Pipes</h4>
+<div>{{user.userName | lowercase }}, {{user.status | uppercase}} </div>
+<div>{{user.DOB | date}} </div>
+<div>{{user.salary | currency:'INR'}} </div>
+
+<code>{{user | json}} </code>
+<h4>Learn Parameterized Pipes</h4>
+<div>{{user.DOB | date:'short'}} </div>
+<div>{{user.salary | currency:'INR':'INR':'3.0.0'}} </div>
+<h4>Learn Chaining Pipes</h4>
+<div>{{user.DOB | date:'MMMM' | uppercase}} </div>
+
+<h4>Learn Custom Pipes</h4>
+<!-- <div>{{user.city | testpipe: user.city}} </div> -->
+<div [innerHTML]="user.city | testpipe:user.city"></div>
+
+<ul>
+
+    <li *ngFor="let user of usered">
+
+        <div [innerHTML]="user.city | testpipe: user.salary">
+
+        </div>
+
+    </li>
+
+</ul>
+
